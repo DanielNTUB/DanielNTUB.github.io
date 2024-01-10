@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>電動汽車品牌首頁</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('首頁圖.png') center / cover no-repeat;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header img {
+    height: 50px;
+  }
+  .nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  .nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 16px;
+  }
+  .main-content {
+    padding-top: 100px; /* To avoid overlap with the fixed header */
+    margin-top: 60px;
+  }
+  .main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    margin-top: 600px;
+  }
+  .button {
+    padding: 10px 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .custom-order {
+    background-color: gray;
+    color: white;
+  }
+  .learn-more {
+    background-color: white;
+    color: black;
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    z-index: 1000;
+  }
+  .footer p {
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="tesla字樣-removebg-preview.png" alt="Logo">
+  <ul class="nav">
+    <li><a href="#">車輛</a></li>
+    <li><a href="#">能源</a></li>
+    <li><a href="#">充電</a></li>
+    <li><a href="#">探索</a></li>
+    <li><a href="#">線上商店</a></li>
+  </ul>
+  <img src="右上角去背圖示-removebg-preview.png" alt="Corner Icon">
+</div>
+
+<div class="main-content">
+  <h1>Model Y</h1>
+  <div class="buttons">
+    <button class="button custom-order">客製化訂單</button>
+    <button class="button learn-more">了解更多內容</button>
+  </div>
+  <div class="footer">
+    <p>立刻預約試駕</p>
+  </div>
+</div>
+
+</body>
+</html>
